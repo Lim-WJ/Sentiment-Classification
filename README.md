@@ -2,7 +2,7 @@
 
 ## Features Engineering
 
-## Word2Vec : CBOW and skipgram
+### Word2Vec : CBOW and skipgram
 As some of the words or terms relating to Covid-19 are relatively new, word embeddings were being trained from scratch using Continuous Bag of Words (“CBOW”) model and Skipgram Model  to capture contextual and semantic similarity. The cleaned dataset which contained more than 5000 tweets were used to build the corpus vocabulary. The tweets were tokenised and each unique word token was mapped to a unique identification number and a “PAD” term was introduced to pad context words to a fixed length if required. The vocabulary size amounted to 12,649.
 
 ### GLoVe
