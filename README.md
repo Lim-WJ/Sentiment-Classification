@@ -19,3 +19,7 @@ Maximum entropy and SVM models  were the two CPU-based machine learning method u
 Bidirectional-LSTM (Bi-LSTM) models  were also built using the CBOW, Skipgram and GloVe word-embeddings for text classification. Each word-embedding was fitted into a separate Bi-LSTM model. A total of 3 Bi-LSTM models were built, namely, Bi-LSTM (CBOW), Bi-LSTM (Skipgram) and Bi-LSTM (GloVe).
 
 
+## Transfer Learning with BERT model
+The last sentiment classifier built was based on BERT-base model and further fine-tuned. BERT tokenizer (bert-base-uncased) was used to tokenise tweets to generate token_ids, segment embedding and positional embedding, which were then passed to the BERT model. The BERT layer is connected to a fully connected layer of 768 nodes with relu activation function, followed by a second fully connected layer with 512 nodes with relu activation, and lastly an output layer of 2 nodes with softmax activation. The output is a probability score for 0 (negative sentiment) and 1 (positive sentiment). Argmax was applied to retrieve the sentiment with the highest probability score. Model weights were fine-tuned for 25 epochs. The model weights were progressively saved and updated for iterations with improved validation loss. Table 4 shows the comparison of the BERT classifier model on the tweets train and validation set. Model showed signs of overfitting as the training accuracy is much better than the validation accuracy.
+
+
