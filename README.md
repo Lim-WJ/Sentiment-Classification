@@ -27,5 +27,5 @@ The last sentiment classifier built was based on BERT-base model and further fin
 
 02 Tweets_Sentiment Classification_LR_SVM_LSTM: Features engineering with CPU and DNN method
 
-03 Tweets_BERT Sentiment Classifier: Transfer learnign with BERT classifier
+03 Tweets_BERT Sentiment Classifier: Transfer learning with BERT classifier
 
