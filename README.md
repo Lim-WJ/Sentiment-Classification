@@ -23,6 +23,9 @@ Bidirectional-LSTM (Bi-LSTM) models  were also built using the CBOW, Skipgram an
 The last sentiment classifier built was based on BERT-base model and further fine-tuned. BERT tokenizer (bert-base-uncased) was used to tokenise tweets to generate token_ids, segment embedding and positional embedding, which were then passed to the BERT model. The BERT layer is connected to a fully connected layer of 768 nodes with relu activation function, followed by a second fully connected layer with 512 nodes with relu activation, and lastly an output layer of 2 nodes with softmax activation. The output is a probability score for 0 (negative sentiment) and 1 (positive sentiment). Argmax was applied to retrieve the sentiment with the highest probability score. Model weights were fine-tuned for 25 epochs. The model weights were progressively saved and updated for iterations with improved validation loss.  Model showed signs of overfitting as model was subsequently regulairsed with 1 FC layer and dropout of 0.5
 
 
+### Misc
+
 02 Tweets_Sentiment Classification_LR_SVM_LSTM: Features engineering with CPU and DNN method
+
 03 Tweets_BERT Sentiment Classifier: Transfer learnign with BERT classifier
 
